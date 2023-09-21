@@ -35,13 +35,9 @@ def outputData(countryNames, countryCodes):
 # check
 if __name__ == "__main__":
     csvFilename = 'data.csv'
-    
-    # Read the CSV file
     csvLines = readCsv(csvFilename)
     
+    # output
     if csvLines:
-        # Parse the CSV data
         countryNames, countryCodes = parseCsv(csvLines)
-        
-        # Print the data
         outputData(countryNames, countryCodes)
